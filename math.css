@@ -1,0 +1,28 @@
+body {
+    color: #222;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.5em;
+    padding: 1em;
+    margin: auto;
+    max-width: 77em;
+    background: #fff;
+    counter-reset: h1 h2 h3;
+}
+
+h3:before {
+    content: counter(h3) "";
+    counter-increment: h3;
+    margin-right:10px;
+    color: white;
+    background-color: black;
+    padding-left: 10px; padding-right:10px;
+}
+
+h3, h3 a, h3 a:visited {
+    decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+
+}
